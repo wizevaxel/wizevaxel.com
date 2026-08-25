@@ -1,5 +1,60 @@
+:root {
+  --c-accent: #ff0064;
+  --c-accent-hover: #ff0064;
+  --c-text: #ffffff;
+  --c-text-subtle: #ffffff;
+  --c-text-accent: #ff4464;
+  --c-background: #121212;
+  --c-card-background: #181818;
+  --c-border: #2a2a2a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: system-ui, -apple-system, sans-serif;
-  color: #fff;
-  background-color: #1a1a1a;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  color: #ffffff;
+  background-color: var(--c-background);
+}
+
+a:link {
+  color: var(--c-text-accent);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--c-text-accent);
+}
+a:hover {
+  color: var(--c-accent-hover);
+}
+a:active {
+  color: var(--c-text-accent);
+}
+
+h1 {
+  color: var(--c-accent);
+}
+
+h3 {
+  color: var(--c-text-subtle);
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.card {
+  width: 100%;
+  margin: 0.5rem;
+  padding: 2rem;
+  background-color: var(--c-card-background);
+  border: 1px solid var(--c-border);
+  border-radius: 1rem;
 }
