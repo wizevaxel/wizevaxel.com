@@ -1,0 +1,4 @@
+.shadowed {
+  border: 0;
+  box-shadow: 2px 6px 12px var(--c-shadow-base), 8px 8px 0 var(--c-brand-base);
+}

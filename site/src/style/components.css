@@ -1,0 +1,77 @@
+.card {
+  margin: 0.4rem;
+  padding: 1.2rem;
+  justify-content: center;
+  justify-items: center;
+  background-color: var(--c-background-surface);
+  border: 1px solid var(--c-border-subtle);
+  border-radius: 1rem;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.card > h2 {
+  margin-bottom: 0.4em;
+  color: var(--c-text-accent);
+}
+
+.icon {
+  fill: var(--c-text-base);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 1.0rem;
+  background-color: transparent;
+  border: 2px solid var(--c-accent-base);
+  border-radius: 1rem;
+  outline: 0;
+  transition: background-color 0.1s ease, outline 0.02s ease-out;
+}
+.button:focus {
+  outline: 4px solid var(--c-accent-base);
+  outline-offset: -3px;
+}
+.button:hover {
+  background-color: var(--c-accent-base);
+  border-radius: 1rem;
+  border-color: var(--c-accent-base);
+}
+.button:active {
+  background-color: var(--c-accent-strong);
+  border-color: var(--c-accent-strong);
+  outline: 0;
+  outline-color: var(--c-accent-strong);
+  transition: background-color 0s, outline 0s;
+}
+
+.button > .icon {
+  fill: var(--c-accent-base);
+  transition: fill 0.05s ease;
+}
+.button:hover > .icon {
+  fill: var(--c-accent-contrast);
+}
+.button:active > .icon {
+  fill: var(--c-accent-contrast);
+  transition: fill 0s;
+}
+
+.button > span {
+  margin: 0 0.6em;
+  color: var(--c-text-accent);
+  font-family: var(--f-heading);
+  transition: color 0.05s ease;
+}
+.button:hover > span {
+  color: var(--c-accent-contrast);
+}
+.button:active > span {
+  color: var(--c-accent-contrast);
+  transition: color 0s;
+}
