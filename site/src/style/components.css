@@ -49,6 +49,21 @@
   outline-color: var(--c-accent-strong);
   transition: background-color 0s, outline 0s;
 }
+.button.brand {
+  border-color: var(--c-brand-base);
+}
+.button.brand:focus {
+  outline-color: var(--c-brand-base);
+}
+.button.brand:hover {
+  background-color: var(--c-brand-base);
+  border-color: var(--c-brand-base);
+}
+.button.brand:active {
+  background-color: var(--c-brand-strong);
+  border-color: var(--c-brand-strong);
+  outline-color: var(--c-brand-strong);
+}
 
 .button > .icon {
   fill: var(--c-accent-base);
@@ -60,6 +75,15 @@
 .button:active > .icon {
   fill: var(--c-accent-contrast);
   transition: fill 0s;
+}
+.button.brand > .icon {
+  fill: var(--c-brand-base);
+}
+.button.brand:hover > .icon {
+  fill: var(--c-brand-contrast);
+}
+.button.brand:active > .icon {
+  fill: var(--c-brand-contrast);
 }
 
 .button > span {
@@ -74,4 +98,13 @@
 .button:active > span {
   color: var(--c-accent-contrast);
   transition: color 0s;
+}
+.button.brand > span {
+  color: var(--c-text-brand);
+}
+.button.brand:hover > span {
+  color: var(--c-brand-contrast);
+}
+.button.brand:active > span {
+  color: var(--c-brand-contrast);
 }

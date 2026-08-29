@@ -21,6 +21,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--f-heading);
 }
+h1.brand, h2.brand, h3.brand, h4.brand, h5.brand, h6.brand {
+  color: var(--c-brand-base);
+}
+h1.accent, h2.accent, h3.accent, h4.accent, h5.accent, h6.braaccentnd {
+  color: var(--c-accent-base);
+}
 
 a:link {
   color: var(--c-accent-base);

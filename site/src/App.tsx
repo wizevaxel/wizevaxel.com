@@ -10,7 +10,7 @@ function App() {
         <Card>
           <div style="padding: 0.4em" class="center-content">
             <SvgBrandText width="24em" height="auto"/>
-            <h3 style="color: var(--c-text-brand)">expression thru media</h3>
+            <h3 class="brand">expression thru media</h3>
           </div>
         </Card>
         <Card title="Links">
