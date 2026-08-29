@@ -1,19 +1,30 @@
+import Card from "./components/Card"
+import LinkButton from "./components/LinkButton"
+
+import SvgBrandText from "./assets/wizevaxel-text.svg"
+
 function App() {
   return (
     <>
-      <div class="container">
-        <div class="card">
-          <h1>wizeväxel</h1>
+      <Card>
+        <Card>
+          <SvgBrandText width="15em" height="auto"/>
           <h3>expression thru media</h3>
-        </div>
-        <div class="card">
-          <ul>
-            <li><a href="https://youtube.com/@wizevaxel">YouTube</a></li>
-            <li><a href="https://github.com/wizevaxel">GitHub</a></li>
-            <li><a href="https://open.spotify.com/artist/3b3SM98HFVmOcE46DSgGwQ">Spotify (LiterallyWize)</a></li>
-          </ul>
-        </div>
-      </div>
+        </Card>
+        <Card title="Links">
+          <Card>
+            <LinkButton href="https://youtube.com/@wizevaxel" text="YouTube" icon="youtube"/>
+            <LinkButton href="https://github.com/wizevaxel" text="GitHub" icon="github"/>
+            <LinkButton href="https://wizevaxel.itch.io/" text="itch.io" icon="itchdotio"/>
+            <LinkButton href="https://roblox.com/users/1341839736/profile" text="Roblox" icon="roblox"/>
+          </Card>
+          <Card>
+            <LinkButton href="https://music.youtube.com/@wizevaxel" text="YouTube Music" icon="youtube"/>
+            <LinkButton href="https://open.spotify.com/artist/3b3SM98HFVmOcE46DSgGwQ" text="(LiterallyWize) Spotify" icon="spotify"/>
+            <LinkButton href="https://music.apple.com/artist/1597124587" text="(LiterallyWize) Apple Music" icon="applemusic"/>
+          </Card>
+        </Card>
+      </Card>
     </>
   )
 }
